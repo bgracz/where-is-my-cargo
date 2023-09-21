@@ -1,0 +1,36 @@
+{
+  "name": "FollowUpViewer",
+  "version": "3.1.1",
+  "description": "FollowUp Viewer",
+  "main": "xfile.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "author": "Blazej Gracz & Import Team",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^17.0.1"
+  },
+  "pack": "build --dir",
+  "electron": "electron xfile.js",
+  "postinstall": "install-app-deps",
+  "build": {
+    "appId": "follow.up.v.22",
+    "mac": {
+      "category": "office.viewer"
+    },
+    "win": {
+      "target": "portable",
+      "icon": "../build/favicon.png"
+    },
+    "directories": {
+  
+    }
+  },
+  "dependencies": {
+  
+  }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="background.css">
+  <link rel="stylesheet" href="dostawy.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400&family=Montserrat:wght@100;200;300;400;500&display=swap"
+    rel="stylesheet">
+  <title>GdzieMójTowar - Plan dostaw</title>
+  <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+</head>
+
+<body>
+  <h1 class="background-text">plan dostaw</h1>
+  <div class="waveWrapper waveAnimation">
+    <div class="waveWrapperInner bgTop">
+    </div>
+    <div class="waveWrapperInner bgMiddle">
+    </div>
+    <div class="waveWrapperInner bgBottom">
+    </div>
+  </div>
+
+  <div class="form" id="form">
+    <div>
+      <a class="control" title="Menu główne" href="./index.html"><img class="support-icon" src="./img/home.png"
+          alt="home-icon"></a>
+      <a class="control" title="Przeładuj dane" onclick="reloadData()"><img class="support-icon" src="./img/reload.png"
+          alt="reload-icon"></a>
+
+      <a id="save" class="control" title="Zapisz plan dostaw w formacie XLSM"
+        href="S:/Achats/Import/PRIV IMPORT/Awizacje Kontenerów 2023 SWADZIM.xlsx" download="Awizacje_Kontenerow_SWADZIM.xlsx"><img class="support-icon"
+          src="./img/floppy-disk.png" alt="save-icon"></a>
+
+    </div>
+
+  </div>
+  <pre id="json"></pre>
+
+  <div id="dostawy" class="col-sm-4 box">
+    <div class="tab">
+      <button id="Swadzim-button" class="tablinks" onclick="openWarehouse(event, 'Swadzim')">Swadzim</button>
+      <button class="tablinks" onclick="openWarehouse(event, 'Sosnowiec')">Sosnowiec</button>
+    </div>
+    <div id="Swadzim" class="tabcontent">
+      <table id="test1" class="table">
+        <h1 class="loading">wczytuję...</h1>
+      </table>
+    </div>
+
+    <div id="Sosnowiec" class="tabcontent">
+      <table id="test2" class="table">
+        <h1 class="loading">wczytuję...</h1>
+      </table>
+    </div>
+
+    <div id="topMenu">
+      <button class="goToTop" onclick="topFunction()" title="Do góry"><b>↑</b></button>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script src="xfile.js"></script>
+    <script src="xlsx.js"></script>
+    <script src="dostawy.js"></script>
+</body>
+</html>

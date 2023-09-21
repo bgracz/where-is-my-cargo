@@ -1,0 +1,280 @@
+/* font-family: 'Bai Jamjuree', sans-serif;
+font-family: 'Montserrat', sans-serif; */
+
+@keyframes showIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+html {
+    align-items: center;
+    text-align: center;
+    color: white;
+    opacity: 1;
+    animation-name: showIn;
+    animation-duration: 1s;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.loading {
+    padding-top: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    font-size: 10vw;
+}
+
+.form {
+    position: -webkit-sticky;
+    /* Safari */
+    position: sticky;
+    top: 0;
+    padding: 10px 0;
+    background-color: #373B44;
+    z-index: 1;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    height: 50px;
+}
+
+.card {
+    perspective: 1000px;
+    display: inline-block;
+    width: 280px;
+    height: 300px;
+    margin: 20px;
+    padding: 10px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+
+.dostawca {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+}
+
+.partia {
+    margin: 0;
+    font-size: 12px;
+}
+
+.rozrzut {
+    margin: 10px 0;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.noname {
+    display: none;
+}
+
+.done {
+    color: #9a9c9c;
+}
+
+.late .flip-card {
+    border: 2px solid #ff6060;
+}
+
+.done .flip-card {
+    border: 2px solid #5f5f5f;
+}
+
+.done .flip-card-back {
+    color: #9a9c9c;
+}
+
+.done .flip-card table {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-image: linear-gradient(to right, transparent 0%, white 50%, transparent 100%) 1 stretch;
+}
+
+.cardInfo {
+    margin-top: 5px;
+}
+
+.main-Info {
+    padding: 10px 0;
+}
+
+.port {
+    margin-bottom: 15px;
+    padding: 5px 0 5px 0;
+}
+
+table {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-image: linear-gradient(to right, transparent 0%, white 50%, transparent 100%) 1 stretch;
+    margin: 20px auto;
+    padding: 15px;
+}
+
+.m3 {
+    font-size: 14px;
+}
+
+.kupcy {
+    margin: 0 auto;
+    padding: 5px 0 5px 0;
+    border-bottom: 1px solid white;
+    width: 30%;
+}
+
+.branza {
+    padding-top: 5px;
+}
+
+#json {
+    display: none;
+}
+
+.choose {
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.left {
+    float: left;
+    width: 50%;
+}
+
+.right {
+    float: right;
+    width: 50%;
+}
+
+.choose a {
+    color: white;
+    font-size: 30px;
+}
+
+.choose a :hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.id {
+    font-size: 12px;
+}
+
+.background-text {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    position: fixed;
+    font-size: 14vw;
+    left: -60px;
+    top: 30%;
+    opacity: 0.035;
+    z-index: -1;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.filters {
+    display: inline-block;
+    width: fit-content;
+    margin: 5px 20px;
+    height: 30px;
+    opacity: 0.5;
+}
+
+.check {
+    display: inline-block;
+    width: fit-content;
+    margin: 5px 20px;
+    height: 30px;
+}
+
+.filters:hover {
+    opacity: 0.8;
+}
+
+.filters select {
+    height: 25px;
+    width: 130px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.help {
+    display: block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin: 0 20px;
+    float: right;
+}
+
+.control {
+    display: block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin: 0 20px;
+    float: left;
+}
+
+.support-icon {
+    width: 30px;
+    height: 30px;
+    filter: invert(100);
+}
+
+.support-icon:hover {
+    opacity: 0.7;
+}
+
+.docs {
+    padding-top: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.document {
+    color: white;
+    padding: 8px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    text-decoration: none;
+    border: 1px solid white;
+    margin: 0 6px;
+}
+
+.document:hover {
+    opacity: 0.7;
+}
+
+.footer {
+    position: inline-block;
+    bottom: 10px;
+    padding: 10px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+}

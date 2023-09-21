@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="background.css">
+  <link rel="stylesheet" href="flip.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400&family=Montserrat:wght@100;200;300;400;500&display=swap"
+    rel="stylesheet">
+  <title>GdzieMójTowar - Follow Up 2023</title>
+  <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+</head>
+
+<body>
+  <h1 class="background-text">follow up '23</h1>
+  <div class="waveWrapper waveAnimation">
+    <div class="waveWrapperInner bgTop">
+    </div>
+    <div class="waveWrapperInner bgMiddle">
+    </div>
+    <div class="waveWrapperInner bgBottom">
+    </div>
+  </div>
+
+  <div class="form">
+    <div>
+      <a class="control" title="Menu główne" href="./index.html"><img class="support-icon" src="./img/home.png" alt="home-icon"></a>
+      <a class="control" title="Przeładuj dane" onclick="reloadData()"><img class="support-icon" src="./img/reload.png" alt="reload-icon"></a>
+      <a class="control" title="Zapisz Follow-Up w formacie XLSM" href="S:/Achats/Import/PRIV IMPORT/Follow Up 2023.xlsm" download="Follow_Up_2023.xlsm"><img class="support-icon" src="./img/floppy-disk.png" alt="save-icon"></a>
+      <a class="control" title="Plan dostaw" href="./plan.html"><img class="support-icon" src="./img/truck.png" alt="truck-icon"></a>
+      <div id="dostawca-filters" class="filters">
+        <label for="supplier-select">Dostawca:</label>
+        <select name="suppliers" id="supplier-select" onchange="supplier(value)"></select>
+      </div>
+
+      <div id="kupiec-filters" class="filters">
+        <label for="kupiec-select">Kupiec:</label>
+        <select name="kupcy" id="kupiec-select" onchange="buyer(value)"></select>
+      </div>
+
+      <div id="category-filters" class="filters">
+        <label for="category-select">Produkt:</label>
+        <select name="category" id="category-select" onchange="category(value)"></select>
+      </div>
+
+      <div class="check">
+        <label class="ukryj-dostarczone"><input type="checkbox" name="hideIfDone" id="checkbox1" value="done">Ukryj dostarczone</label>
+      </div>
+    </div>
+    
+  </div>
+  <pre id="json"></pre>
+  <div id="test1" class="col-sm-4 box">
+    <h1 class="loading">wczytuję...</h1>
+  </div>
+  <script src="jquery.js"></script>
+  <script src="xfile.js"></script>
+  <script src="xlsx.js"></script>
+  <script src="render2023.js"></script>
+</body>
+
+</html>
