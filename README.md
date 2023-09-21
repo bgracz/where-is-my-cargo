@@ -13,3 +13,5 @@ How to run it?
 2. Download all dependencies from npm
 3. Compile app as standalone desktop app or run it in browser as web app
 4. Compilation will be made by using a Electron. Choose right way to fit your needs as follow Electron documentation.
+
+CC BY-NC 4.0
